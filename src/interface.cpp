@@ -1,7 +1,7 @@
 // OrtOS - Private manager for working with simple programs
 // Developmet to start 03/03/2023
 #include <iostream>
-#include "programs/guess_x.cpp"
+#include "programs/guess_x.h"
 
 int main()
 {
