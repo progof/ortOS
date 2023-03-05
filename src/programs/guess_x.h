@@ -2,7 +2,6 @@
 #define GUESS_X_H
 
 #include <iostream>
-#include <cmath>
 
 void guess_x();
 

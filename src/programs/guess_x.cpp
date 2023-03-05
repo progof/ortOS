@@ -1,41 +1,49 @@
-#include <iostream>
-#include <cmath>
-#include <stdlib.h>
-#include <time.h>
+#include "guess_x.h"
 
 int GetRandomNumber(int min_num, int max_num)
 {
-  srand(time(NULL));
   int num = min_num + rand() % (max_num - min_num + 1);
   return num;
 }
 
 void guess_x()
 {
-    int min = 0;
-    int max = 100;
-    int n, x;
+  srand(time(NULL));
 
-    for ( ; ; )
+  int min = 0;
+  int max = 100;
+  int n, x;
+
+  while (true)
+  {
+    x = GetRandomNumber(min, max);
+
+    std::cout << "Random number is: " << x << std::endl;
+    std::cout << "Enter the integer in range from " << min << " to " << max << ":" << std::endl;
+    std::cin >> n;
+
+    if (n == x)
     {
-        x = GetRandomNumber(min, max);
+      std::cout << "You win, integer: " << n << std::endl;
+      break;
+    }
 
-        std::cout << x << std::endl; 
-        std::cout << "Enter the integer:" << std::endl;
-        std::cin >> n;
+    if (n < min || n > max)
+    {
+      std::cout << "Wrong range! Try again" << std::endl;
+      continue;
+    }
 
-        if(n == x)
-        {
-            std::cout << "You win, integer: " << n << std::endl;
-            break;
-        }
-
-        if(n != x)
-        {
-            std::cout << "Upss... :(" << std::endl;
-            max = n;
-            min = max;
-        }
-
-    } 
+    std::cout << "Upss... :(" << std::endl;
+    if (n > x)
+    {
+      max = n;
+      min = x;
+    }
+    else
+    {
+      max = x;
+      min = n;
+    }
+  }
 }
