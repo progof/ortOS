@@ -1,9 +1,13 @@
 #include <iostream>
 #include <cmath>
+#include <stdlib.h>
+#include <time.h>
 
-int rnd(int a, int b)
+int GetRandomNumber(int min_num, int max_num)
 {
-	return (b - a)* drand48() + a;
+  srand(time(NULL));
+  int num = min_num + rand() % (max_num - min_num + 1);
+  return num;
 }
 
 void guess_x()
@@ -12,17 +16,26 @@ void guess_x()
     int max = 100;
     int n, x;
 
-    for (int i = 0; i < 100; ++i)
+    for ( ; ; )
     {
-        x = rnd(min, max);
+        x = GetRandomNumber(min, max);
+
         std::cout << x << std::endl; 
         std::cout << "Enter the integer:" << std::endl;
         std::cin >> n;
-        if(n == x){
+
+        if(n == x)
+        {
             std::cout << "You win, integer: " << n << std::endl;
             break;
-        }else{
-            std::cout << "Upss... :(" << std::endl;
         }
+
+        if(n != x)
+        {
+            std::cout << "Upss... :(" << std::endl;
+            max = n;
+            min = max;
+        }
+
     } 
 }
