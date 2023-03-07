@@ -1,7 +1,8 @@
 // OrtOS - Private manager for working with simple programs
 // Developmet to start 03/03/2023
 #include <iostream>
-#include "programs/guess_x.h"
+#include "programs/education/guess_x.h"
+#include "programs/finance/compound_interest.h"
 
 int main()
 {
@@ -18,7 +19,7 @@ int main()
         guess_x();
         break;
     case 2:
-        std::cout << "\nProgram #2" << std::endl;
+        compound_interest();
         break;
     case 3:
         std::cout << "\nProgram #3" << std::endl;
