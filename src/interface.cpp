@@ -9,7 +9,7 @@ int main()
     system("clear");
     std::cout << "Welcome to OrtOS manager :)" << std::endl; 
     short option;
-    std::cout << "\nList of available programs:\n\n1. Game: Guess X\n1. Program #2\n3. Program #3" << std::endl;
+    std::cout << "\nList of available programs:\n\n1. Game: Guess X\n2. Finance: Compound Interest\n3. Program #3" << std::endl;
     std::cout << "\n[OrtOS] Choose what you want to do ->: ";
     std::cin >> option;
 
