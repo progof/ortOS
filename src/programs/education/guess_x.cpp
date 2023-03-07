@@ -1,4 +1,4 @@
-#include "guess_x.h"
+#include "guess_x.hpp"
 
 int GetRandomNumber(int min_num, int max_num)
 {
