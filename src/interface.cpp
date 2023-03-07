@@ -1,20 +1,20 @@
 // OrtOS - Private manager for working with simple programs
 // Developmet to start 03/03/2023
 #include <iostream>
-#include "programs/education/guess_x.h"
-#include "programs/finance/compound_interest.h"
+#include "programs/education/guess_x.hpp"
+#include "programs/finance/compound_interest.hpp"
 
 int main()
 {
     system("clear");
-    std::cout << "Welcome to OrtOS manager :)" << std::endl; 
+    std::cout << "Welcome to OrtOS manager :)" << std::endl;
     short option;
     std::cout << "\nList of available programs:\n\n1. Game: Guess X\n2. Finance: Compound Interest\n3. Program #3" << std::endl;
     std::cout << "\n[OrtOS] Choose what you want to do ->: ";
     std::cin >> option;
 
     switch (option)
-    {  
+    {
     case 1:
         guess_x();
         break;
@@ -23,12 +23,13 @@ int main()
         break;
     case 3:
         std::cout << "\nProgram #3" << std::endl;
-        break;        
-        
+        break;
+
     default:
-        std::cout << "\n\nError: No such option!!!\n\n" << std::endl;
+        std::cout << "\n\nError: No such option!!!\n\n"
+                  << std::endl;
         break;
     }
 
     return 0;
-} 
+}
