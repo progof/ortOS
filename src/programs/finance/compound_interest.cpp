@@ -20,5 +20,5 @@ void compound_interest()
     result = principal * pow((1 + rate / 100), time);
 
     std::cout << std::endl
-              << "Compound interest : " << result;
+              << "Compound interest : " << result << std::endl;
 }
