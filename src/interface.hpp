@@ -5,8 +5,10 @@
 
 #include <iostream>
 #include "programs/education/guess_x.hpp"
+#include "programs/education/mult_big_num.hpp" 
+#include "programs/education/compress.hpp" 
 #include "programs/finance/compound_interest.hpp"
 
-char version[] = "1.2.1";
+char version[] = "1.3.1";
 
 #endif
