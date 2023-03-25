@@ -4,6 +4,7 @@
 void compound_interest()
 {
     float principal, rate, time, result;
+    std::cout << "\n\tThe name of the program => [Compound interest]\n" << std::endl;
 
     std::cout << "Enter principal : ";
     std::cin >> principal;

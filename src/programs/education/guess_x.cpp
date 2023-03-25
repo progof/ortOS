@@ -14,6 +14,8 @@ void guess_x()
   int max = 100;
   int n, x;
 
+  std::cout << "\n\tThe name of the program => [Guess X]\n" << std::endl;
+
   while (true)
   {
     x = GetRandomNumber(min, max);

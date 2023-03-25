@@ -8,6 +8,7 @@ void mult_big_num()
     char a[MAX_DIGITS+1], b[MAX_DIGITS+1];
     int result[MAX_DIGITS*2] = {0};
 
+    cout << "\n\tThe name of the program => [Multiplication of large numbers]\n" << std::endl;
     cout << "Enter the number [a]: ";
     cin >> a;
     cout << "Enter the number [b]: ";

@@ -4,13 +4,12 @@
 using namespace std;
 
 int main()
-{
+{   
     int option;
     string confirm;
     do
     { 
-        system("clear");
-        cout << "\t\tWelcome to OrtOS manager [" << version << "]" << endl;
+        cout << "\n\t\tWelcome to OrtOS manager [" << version << "]" << endl;
         cout << "\nThis is a personal manager for working with simple programs,\nto run working with the manager, enter '0'" << endl;
         cout << "\n[OrtOS] Type id of program to run it $ ";
         cin >> option;
@@ -36,8 +35,8 @@ int main()
                 cout << "\n\tInvalid program ID\n" << endl;
                 break;
         }
-        cout<<"Press 'y' or 'Y' to continue: ";
-        cin>>confirm;
+        cout << "Do you want to continue? [Y/n] ";
+        cin >> confirm;
 
     } while (confirm == "y" || confirm == "Y");
     

@@ -11,7 +11,7 @@
 #include "programs/finance/compound_interest.hpp"
 
 using namespace std;
-char version[] = "2.3.1";
+char version[] = "2.3.2";
 
 void displaymenu()
 { 
@@ -26,9 +26,9 @@ void displaymenu()
 
 void info()
 {
-    cout << "\n'Guess X' => ..." << endl;
-    cout << "\n'Compound Interest' => ..." << endl;
-    cout << "\n'Multiplication of large numbers' => ..." << endl;
+    cout << "\n'Guess X' => The computer guesses a random number from 0 to 100 and you have to guess it;" << endl;
+    cout << "\n'Compound Interest' => Calculator that will help calculate the investment;" << endl;
+    cout << "\n'Multiplication of large numbers' => Calculator that can multiply a number with 100 digits;" << endl;
     cout << endl;
 }
 
