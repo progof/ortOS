@@ -12,8 +12,8 @@ int main()
         system("clear");
         cout << "\t\tWelcome to OrtOS manager [" << version << "]" << endl;
         cout << "\nThis is a personal manager for working with simple programs,\nto run working with the manager, enter '0'" << endl;
-        cout<<"\n[OrtOS] Type id of program to run it $ ";
-        cin>>option;
+        cout << "\n[OrtOS] Type id of program to run it $ ";
+        cin >> option;
         
         switch (option)
         {
