@@ -4,25 +4,26 @@ void compress(const char* str)
 {
     while(*str)
     {
-        int n {1};
+        int n{1};
         while (*str == *(str+n)) ++n;
         if(n == 1)
         {
-            std::cout << *str;
+            cout << *str;
         }else{
-            std::cout << "[" << n << *str << "]";
+            cout << "[" << n << *str << "]";
         }
         str += n;
     }
-    std::cout << std::endl;
+    cout << endl;
 }
 
 void compress_display()
 {
-    constexpr int MAX_CHARS= 256;
+    cout << "\n\tThe name of the program => [Compress]\n" << endl;
+    constexpr int MAX_CHARS{256};
     char str[MAX_CHARS];
-    std::cin.width(MAX_CHARS);
-    std::cin >> str;
+    cin.width(MAX_CHARS);
+    cin >> str;
 
     compress(str);
 }

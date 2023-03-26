@@ -9,7 +9,7 @@ int main()
     do
     { 
         cout << FBLU("\n\t\tWelcome to OrtOS manager") << FGRN(" ["<< version << "]") << endl;
-        cout << "\nThis is a personal manager for working with simple programs,\nto run working with the manager, enter '0'" << endl;
+        cout << "\nThis is a personal manager for working with simple programs,\nto run working with the manager, enter " << FYEL(BOLD("'0'")) << endl;
         cout << FMAG("\n[OrtOS] Type id of program to run it $ ");
         cin >> option;
         
@@ -30,6 +30,9 @@ int main()
             case 4: 
                 mult_big_num(); 
                 break;
+            case 5: 
+                compress_display(); 
+                break;    
             default: 
                 cout << FRED("\n\tInvalid program ID\n") << endl;
                 break;
