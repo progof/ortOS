@@ -14,29 +14,29 @@ void guess_x()
   int max = 100;
   int n, x;
 
-  std::cout << "\n\tThe name of the program => [Guess X]\n" << std::endl;
+  cout << "\n\tThe name of the program => [Guess X]\n" << endl;
 
   while (true)
   {
     x = GetRandomNumber(min, max);
 
-    std::cout << "Random number is: " << x << std::endl;
-    std::cout << "Enter the integer in range from " << min << " to " << max << ":" << std::endl;
-    std::cin >> n;
+    cout << "Random number is: " << x << endl;
+    cout << "Enter the integer in range from " << min << " to " << max << ":" << endl;
+    cin >> n;
 
     if (n == x)
     {
-      std::cout << "You win, integer: " << n << std::endl;
+      cout << "You win, integer: " << n << endl;
       break;
     }
 
     if (n < min || n > max)
     {
-      std::cout << "Wrong range! Try again" << std::endl;
+      cout << "Wrong range! Try again" << endl;
       continue;
     }
 
-    std::cout << "Upss... :(" << std::endl;
+    cout << "Upss... :(" << endl;
     if (n > x)
     {
       max = n;

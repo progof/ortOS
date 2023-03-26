@@ -1,25 +1,24 @@
 #include "compound_interest.hpp"
-#include <math.h>
 
 void compound_interest()
 {
     float principal, rate, time, result;
-    std::cout << "\n\tThe name of the program => [Compound interest]\n" << std::endl;
+    cout << "\n\tThe name of the program => [Compound interest]\n" << endl;
 
-    std::cout << "Enter principal : ";
-    std::cin >> principal;
+    cout << "Enter principal : ";
+    cin >> principal;
 
-    std::cout << std::endl
+    cout << std::endl
               << "Enter rate : ";
-    std::cin >> rate;
+    cin >> rate;
 
-    std::cout << std::endl
+    cout << std::endl
               << "Enter time (year) : ";
-    std::cin >> time;
+    cin >> time;
 
     // Calculate compound interest
     result = principal * pow((1 + rate / 100), time);
 
-    std::cout << std::endl
-              << "Compound interest : " << result << std::endl;
+    cout << std::endl
+              << "Compound interest : " << result << endl;
 }

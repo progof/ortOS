@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <cmath>
+using namespace std;
 
 void compound_interest();
 

@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <cstring>
+using namespace std;
 
 void mult_big_num();
 
