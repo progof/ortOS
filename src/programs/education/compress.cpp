@@ -4,7 +4,7 @@ void compress(const char* str)
 {
     while(*str)
     {
-        int n{1};
+        int n = 1;
         while (*str == *(str+n)) ++n;
         if(n == 1)
         {
@@ -20,7 +20,7 @@ void compress(const char* str)
 void compress_display()
 {
     cout << "\n\tThe name of the program => [Compress]\n" << endl;
-    constexpr int MAX_CHARS{256};
+    const int MAX_CHARS = 256;
     char str[MAX_CHARS];
     cin.width(MAX_CHARS);
     cin >> str;

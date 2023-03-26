@@ -35,23 +35,4 @@
 using namespace std;
 char version[] = "2.3.3";
 
-void displaymenu()
-{ 
-    string programs_list[] = {"Menu", "Info", "Guess X", "Compound Interest", "Multiplication of large numbers"};
-    std::cout << FCYN("\n[ID] Programs name:") << std::endl;
-        for (int i = 0; i < 5; i++)
-        {
-            std::cout << "[" << i << "] " << programs_list[i] << std::endl;
-        }
-        cout << endl;
-}
-
-void info()
-{
-    cout << FGRN("\n'Guess X' =>") << " The computer guesses a random number from 0 to 100 and you have to guess it;" << endl;
-    cout << FGRN("\n'Compound Interest' =>") << " Calculator that will help calculate the investment;" << endl;
-    cout << FGRN("\n'Multiplication of large numbers' =>") << " Calculator that can multiply a number with 100 digits;" << endl;
-    cout << endl;
-}
-
 #endif
