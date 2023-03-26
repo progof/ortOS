@@ -10,11 +10,11 @@ void compress(const char* str)
         {
             cout << *str;
         }else{
-            cout << "[" << n << *str << "]";
+            cout << FBLU("[" << n << *str << "]");
         }
         str += n;
     }
-    cout << endl;
+    cout << "\n" << endl;
 }
 
 void compress_display()
@@ -22,6 +22,7 @@ void compress_display()
     cout << "\n\tThe name of the program => [Compress]\n" << endl;
     const int MAX_CHARS = 256;
     char str[MAX_CHARS];
+    cout << "Enter the string: ";
     cin.width(MAX_CHARS);
     cin >> str;
 

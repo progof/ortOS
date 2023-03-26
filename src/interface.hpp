@@ -5,10 +5,13 @@
 
 #include <iostream>
 #include <string>
+#include <array>
 
+/* Education */
 #include "programs/education/guess_x.hpp"
 #include "programs/education/mult_big_num.hpp" 
 #include "programs/education/compress.hpp" 
+/* Financen */
 #include "programs/finance/compound_interest.hpp"
 
 /* Colors */
@@ -33,6 +36,6 @@
 #define UNDL(x) "\x1B[4m" x RST
 
 using namespace std;
-char version[] = "2.3.3";
+char version[] = "2.3.5";
 
 #endif

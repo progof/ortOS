@@ -19,7 +19,7 @@ compound_interest.o: ./src/programs/finance/compound_interest.cpp ./src/programs
 	$(CXX) -c ./src/programs/finance/compound_interest.cpp -o ./$(BUILD_DIR)/compound_interest.o
 
 run: compress.o mult_big_num.o guess_x.o compound_interest.o ./src/interface.hpp build_dir
-	g++ $(CXXFLAGS) ./src/interface.cpp ./$(BUILD_DIR)/compress.o ./$(BUILD_DIR)/mult_big_num.o ./$(BUILD_DIR)/guess_x.o ./$(BUILD_DIR)/compound_interest.o -o ./$(BUILD_DIR)/$(TARGET) && ./$(BUILD_DIR)/$(TARGET)
+	g++ ./src/interface.cpp ./$(BUILD_DIR)/compress.o ./$(BUILD_DIR)/mult_big_num.o ./$(BUILD_DIR)/guess_x.o ./$(BUILD_DIR)/compound_interest.o -o ./$(BUILD_DIR)/$(TARGET) && ./$(BUILD_DIR)/$(TARGET)
 
 clean:
 	rm -r ./$(BUILD_DIR)/*
