@@ -4,7 +4,7 @@
 
 void displaymenu()
 { 
-    string programs_list[] = {"Menu", "Info", "Guess X", "Compound Interest", "Multiplication of large numbers"};
+    string programs_list[] = {"Menu", "Info", "Guess X", "Compound Interest", "Multiplication of large numbers", "Compress"};
     std::cout << FCYN("\n[ID] Programs name:") << std::endl;
         for (int i = 0; i < end(programs_list)-begin(programs_list); i++)
         {
@@ -24,11 +24,17 @@ void info()
 
 int main(int argc, char* argv[])
 {   
+    // current date/time based on current system
+   time_t now = time(0);
+   
+   // convert now to string form
+   char* dt = ctime(&now);
+
     int option;
     string confirm;
     do
     { 
-        cout << FBLU("\n\t\tWelcome to OrtOS manager") << FGRN(" ["<< version << "]") << endl;
+        cout << FBLU("\n\t\tWelcome to OrtOS manager") << FGRN(" ["<< version << "] ") << dt << endl;
         cout << "\nThis is a personal manager for working with simple programs,\nto run working with the manager, enter " << FYEL(BOLD("'0'")) << endl;
         cout << FMAG("\n[OrtOS] Type id of program to run it $ ");
         cin >> option;

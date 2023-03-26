@@ -6,6 +6,7 @@
 #include <iostream>
 #include <string>
 #include <array>
+#include <ctime>
 
 /* Education */
 #include "programs/education/guess_x.hpp"
@@ -36,6 +37,6 @@
 #define UNDL(x) "\x1B[4m" x RST
 
 using namespace std;
-char version[] = "2.3.5";
+char version[] = "2.3.6";
 
 #endif
