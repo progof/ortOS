@@ -1,5 +1,4 @@
 #include "mult_big_num.hpp"
-using namespace std;
 
 const int MAX_DIGITS = 100; 
 
