@@ -4,7 +4,7 @@
 
 void displaymenu()
 { 
-    string programs_list[] = {"Menu", "Info", "Guess X", "Compound Interest", "Multiplication of large numbers", "Compress"};
+    string programs_list[] = {"Menu", "Info", "Guess X", "Compound Interest", "Multiplication of large numbers", "Compress", "Hungry Dog"};
     std::cout << FCYN("\n[ID] Programs name:") << std::endl;
         for (int i = 0; i < end(programs_list)-begin(programs_list); i++)
         {
@@ -19,6 +19,7 @@ void info()
     cout << FGRN("\n'Compound Interest' =>") << " Calculator that will help calculate the investment;" << endl;
     cout << FGRN("\n'Multiplication of large numbers' =>") << " Calculator that can multiply a number with 100 digits;" << endl;
     cout << FGRN("\n'Copmress' =>") << " Compresses elements that are repeated multiple times;" << endl;
+    cout << FGRN("\n'Hungry Dog' =>") << " This is a game in which you have to feed bones to a hungry dog;" << endl;
     cout << endl;
 }
 
@@ -58,7 +59,10 @@ int main(int argc, char* argv[])
                 break;
             case 5: 
                 compress_display(); 
-                break;    
+                break;
+            case 6: 
+                hungry_dog(); 
+                break;        
             default: 
                 cout << FRED("\n\tInvalid program ID\n") << endl;
                 break;

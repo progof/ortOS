@@ -14,6 +14,8 @@
 #include "programs/education/compress.hpp" 
 /* Financen */
 #include "programs/finance/compound_interest.hpp"
+/* Game */
+#include "programs/game/hungry_dog.hpp"
 
 /* Colors */
 #define RST  "\x1B[0m"
@@ -37,6 +39,6 @@
 #define UNDL(x) "\x1B[4m" x RST
 
 using namespace std;
-char version[] = "2.3.6";
+char version[] = "2.4.6";
 
 #endif
