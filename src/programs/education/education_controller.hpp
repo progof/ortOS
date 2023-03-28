@@ -1,19 +1,11 @@
-// OrtOS - Private manager for working with simple programs
-// Developmet to start 03/03/2023
-#ifndef INTERFACE_H
-#define INTERFACE_H
+#ifndef EDUCATION_CONTROLLER_H
+#define EDUCATION_CONTROLLER_H
 
 #include <iostream>
-#include <string>
-#include <array>
-#include <ctime>
-
-/* Education */
-#include "programs/education/education_controller.hpp"
-/* Financen */
-#include "programs/finance/finance_controller.hpp"
-/* Game */
-#include "programs/game/game_controller.hpp"
+/* The programs list from Edudaction */
+#include "guess_x.hpp"
+#include "mult_big_num.hpp" 
+#include "compress.hpp"
 
 /* Colors */
 #define RST  "\x1B[0m"
@@ -37,6 +29,9 @@
 #define UNDL(x) "\x1B[4m" x RST
 
 using namespace std;
-char version[] = "3.4.6";
+
+void education_menu();
+void education_info();
+void education_controller();
 
 #endif
