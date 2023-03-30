@@ -31,7 +31,7 @@ game_controller.o: ./src/programs/game/game_controller.cpp ./src/programs/game/g
 	$(CXX) -c ./src/programs/game/game_controller.cpp -o ./$(BUILD_DIR)/game_controller.o
 
 run: game_controller.o finance_controller.o education_controller.o hungry_dog.o compress.o mult_big_num.o guess_x.o compound_interest.o ./src/interface.hpp build_dir
-	g++ ./src/interface.cpp ./$(BUILD_DIR)/game_controller.o ./$(BUILD_DIR)/finance_controller.o ./$(BUILD_DIR)/education_controller.o ./$(BUILD_DIR)/hungry_dog.o ./$(BUILD_DIR)/compress.o ./$(BUILD_DIR)/mult_big_num.o ./$(BUILD_DIR)/guess_x.o ./$(BUILD_DIR)/compound_interest.o -o ./$(BUILD_DIR)/$(TARGET) && ./$(BUILD_DIR)/$(TARGET)
+	g++ ./src/interface.cpp ./$(BUILD_DIR)/game_controller.o ./$(BUILD_DIR)/finance_controller.o ./$(BUILD_DIR)/education_controller.o ./$(BUILD_DIR)/hungry_dog.o ./$(BUILD_DIR)/compress.o ./$(BUILD_DIR)/mult_big_num.o ./$(BUILD_DIR)/guess_x.o ./$(BUILD_DIR)/compound_interest.o --std=c++17 -o ./$(BUILD_DIR)/$(TARGET) && ./$(BUILD_DIR)/$(TARGET)
 
 clean:
 	rm -r ./$(BUILD_DIR)/*
