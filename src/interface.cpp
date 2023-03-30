@@ -34,7 +34,7 @@ int main(int argc, char* argv[])
     string confirm;
     do
     { 
-        cout << FBLU("\n\t\tWelcome to OrtOS manager") << FGRN(" ["<< version << "] ") << dt << endl;
+        cout << FBLU("\n\t\tWelcome to OrtOS manager [DEV]") << FGRN(" ["<< version << "] ") << dt << endl;
         cout << "\nThis is a personal manager for working with simple programs,\nto run working with the manager, enter " << FYEL(BOLD("'0'")) << endl;
         cout << FMAG("\n[OrtOS@Root] Type id of program to run it $ ");
         cin >> option;
