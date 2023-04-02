@@ -10,13 +10,13 @@
 #include <map>
 
 /* Program category: Education */
-#include "programs/education/guess_x.hpp"
 #include "programs/education/compress.hpp"
 #include "programs/education/mult_big_num.hpp"
 /* Program category: Finance */
 #include "programs/finance/compound_interest.hpp"
 /* Program category: Game */
 #include "programs/game/hungry_dog.hpp"
+#include "programs/game/guess_x.hpp"
 
 /* Colors */
 #define RST  "\x1B[0m"
@@ -40,6 +40,6 @@
 #define UNDL(x) "\x1B[4m" x RST
 
 using namespace std;
-char version[] = "4.4.6";
+char version[] = "4.4.7";
 
 #endif
