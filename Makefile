@@ -1,6 +1,6 @@
 TARGET = ortOS
 BUILD_DIR = build
-CXXFLAGS = -std=c++11
+CXXFLAGS = -std=c++17
 CXX = g++
 
 build_dir:
@@ -22,7 +22,7 @@ hungry_dog.o: ./src/programs/game/hungry_dog.cpp ./src/programs/game/hungry_dog.
 	$(CXX) -c ./src/programs/game/hungry_dog.cpp -o ./$(BUILD_DIR)/hungry_dog.o	
 
 run: hungry_dog.o compress.o mult_big_num.o guess_x.o compound_interest.o ./src/interface.hpp build_dir
-	g++ ./src/interface.cpp  ./$(BUILD_DIR)/hungry_dog.o ./$(BUILD_DIR)/compress.o ./$(BUILD_DIR)/mult_big_num.o ./$(BUILD_DIR)/guess_x.o ./$(BUILD_DIR)/compound_interest.o --std=c++17 -o ./$(BUILD_DIR)/$(TARGET) && ./$(BUILD_DIR)/$(TARGET)
+	g++ ./src/interface.cpp  ./$(BUILD_DIR)/hungry_dog.o ./$(BUILD_DIR)/compress.o ./$(BUILD_DIR)/mult_big_num.o ./$(BUILD_DIR)/guess_x.o ./$(BUILD_DIR)/compound_interest.o $(CXXFLAGS) -o ./$(BUILD_DIR)/$(TARGET) && ./$(BUILD_DIR)/$(TARGET)
 
 clean:
 	rm -r ./$(BUILD_DIR)/*
