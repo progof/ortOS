@@ -31,11 +31,11 @@
  int main() {
    std::map<ProgramID, Program> programs;
 
-    programs[ProgramID::GuessGame] = Program{.func = &guess_x, .name = FBLU("Game: Guess X"), .description = UNDL("The computer guesses a random number from 0 to 100 and you have to guess it")};
-    programs[ProgramID::CompoundInterest] = Program{.func = &compound_interest, .name = FBLU("Finance: Compound Interest"), .description = UNDL("Calculator that will help calculate the investment")};
-    programs[ProgramID::Compress] = Program{.func = &compress_display, .name = FBLU("Education: Compress"), .description = UNDL("Compresses elements that are repeated multiple times")};
-    programs[ProgramID::MultBigNum] = Program{.func = &mult_big_num, .name = FBLU("Education: MultBigNum"), .description = UNDL("soon...")};
-    programs[ProgramID::HungryDog] = Program{.func = &hungry_dog, .name = FBLU("Game: HungryDog"), .description = UNDL("soon...")};
+    programs[ProgramID::GuessGame] = Program{.func = &guess_x, .name = FBLU("Game: Guess X"), .description = UNDL("The computer guesses a random number from 0 to 100 and you have to guess it;")};
+    programs[ProgramID::CompoundInterest] = Program{.func = &compound_interest, .name = FBLU("Finance: Compound Interest"), .description = UNDL("Calculator that will help calculate the investment;")};
+    programs[ProgramID::Compress] = Program{.func = &compress_display, .name = FBLU("Education: Compress"), .description = UNDL("Compresses elements that are repeated multiple times;")};
+    programs[ProgramID::MultBigNum] = Program{.func = &mult_big_num, .name = FBLU("Education: MultBigNum"), .description = UNDL("Calculator that can multiply a number with 100 digits;")};
+    programs[ProgramID::HungryDog] = Program{.func = &hungry_dog, .name = FBLU("Game: HungryDog"), .description = UNDL("This is a game in which you have to feed bones to a hungry dog;")};
 
     system("clear");
     cout << FBLU("\n\t\tWelcome to OrtOS manager") << FGRN(" ["<< version << "] ") << endl;

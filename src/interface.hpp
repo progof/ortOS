@@ -40,6 +40,6 @@
 #define UNDL(x) "\x1B[4m" x RST
 
 using namespace std;
-char version[] = "4.4.7";
+char version[] = "4.4.8";
 
 #endif
