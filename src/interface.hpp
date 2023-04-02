@@ -7,13 +7,16 @@
 #include <string>
 #include <array>
 #include <ctime>
+#include <map>
 
-/* Education */
-#include "programs/education/education_controller.hpp"
-/* Financen */
-#include "programs/finance/finance_controller.hpp"
-/* Game */
-#include "programs/game/game_controller.hpp"
+/* Program category: Education */
+#include "programs/education/compress.hpp"
+#include "programs/education/mult_big_num.hpp"
+/* Program category: Finance */
+#include "programs/finance/compound_interest.hpp"
+/* Program category: Game */
+#include "programs/game/hungry_dog.hpp"
+#include "programs/game/guess_x.hpp"
 
 /* Colors */
 #define RST  "\x1B[0m"
@@ -37,6 +40,6 @@
 #define UNDL(x) "\x1B[4m" x RST
 
 using namespace std;
-char version[] = "3.4.6";
+char version[] = "4.4.8";
 
 #endif
