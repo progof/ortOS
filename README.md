@@ -8,6 +8,7 @@ List of programs available in the manager:
 3. Finance: Compound Interest
 4. Education: Compress
 5. Education: MultBigNum
+6. Education: Animal
 
 
 ```bash
