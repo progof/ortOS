@@ -10,7 +10,6 @@ List of programs available in the manager:
 5. Education: MultBigNum
 6. Education: Animal
 
-
 ```bash
 git clone https://github.com/progof/ortOS.git cd && ortOS
 make run
