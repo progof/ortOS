@@ -8,10 +8,13 @@
 #include <array>
 #include <ctime>
 #include <map>
+#include <fstream>
+#include <sstream>
 
 /* Program category: Education */
 #include "programs/education/compress.hpp"
 #include "programs/education/mult_big_num.hpp"
+#include "programs/education/animal.hpp"
 /* Program category: Finance */
 #include "programs/finance/compound_interest.hpp"
 /* Program category: Game */
@@ -40,6 +43,8 @@
 #define UNDL(x) "\x1B[4m" x RST
 
 using namespace std;
-char version[] = "4.4.8";
+char version[] = "4.5.8";
+
+void ortOS();
 
 #endif
