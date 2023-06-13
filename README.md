@@ -9,6 +9,7 @@ List of programs available in the manager:
 4. Education: Compress
 5. Education: MultBigNum
 6. Education: Animal
+7. Algorithm: Bubble Sort
 
 ```bash
 git clone https://github.com/progof/ortOS.git cd && ortOS
