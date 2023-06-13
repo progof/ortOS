@@ -20,6 +20,8 @@
 /* Program category: Game */
 #include "programs/game/hungry_dog.hpp"
 #include "programs/game/guess_x.hpp"
+/* Program category: Algo */
+#include "programs/algo/bubbleSort.hpp"
 
 /* Colors */
 #define RST  "\x1B[0m"
@@ -43,7 +45,7 @@
 #define UNDL(x) "\x1B[4m" x RST
 
 using namespace std;
-char version[] = "4.5.8";
+char version[] = "4.6.8";
 
 void ortOS();
 

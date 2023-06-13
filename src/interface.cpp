@@ -4,14 +4,15 @@
  // Starts from 1
  enum class ProgramID {
    GuessGame = 1,
+   HungryDog,
    Compress,
    MultBigNum,
-   HungryDog,
    CompoundInterest,
    Animal,
+   BubbleSort,
    // Min and max items are used to validate enum values
    MIN = GuessGame,
-   MAX = CompoundInterest
+   MAX = BubbleSort
  };
 
  // Validate and converts integer to ProgramID enum, otherwise throws error
@@ -31,13 +32,17 @@
 
  int main(){
    std::map<ProgramID, Program> programs;
-
+    /* Program category: Game */
     programs[ProgramID::GuessGame] = Program{.func = &guess_x, .name = FBLU("Game: Guess X"), .description = UNDL("The computer guesses a random number from 0 to 100 and you have to guess it;")};
+    programs[ProgramID::HungryDog] = Program{.func = &hungry_dog, .name = FBLU("Game: HungryDog"), .description = UNDL("This is a game in which you have to feed bones to a hungry dog;")};
+    /* Program category: Finance */
     programs[ProgramID::CompoundInterest] = Program{.func = &compound_interest, .name = FBLU("Finance: Compound Interest"), .description = UNDL("Calculator that will help calculate the investment;")};
+    /* Program category: Education */
     programs[ProgramID::Compress] = Program{.func = &compress_display, .name = FBLU("Education: Compress"), .description = UNDL("Compresses elements that are repeated multiple times;")};
     programs[ProgramID::MultBigNum] = Program{.func = &mult_big_num, .name = FBLU("Education: MultBigNum"), .description = UNDL("Calculator that can multiply a number with 100 digits;")};
     programs[ProgramID::Animal] = Program{.func = &animal_display, .name = FBLU("Education: Animal"), .description = UNDL("Example of class inheritance in с++;")};
-    programs[ProgramID::HungryDog] = Program{.func = &hungry_dog, .name = FBLU("Game: HungryDog"), .description = UNDL("This is a game in which you have to feed bones to a hungry dog;")};
+    /* Program category: Algo */
+    programs[ProgramID::BubbleSort] = Program{.func = &displayBubbleSort, .name = FBLU("Algo: BubbleSort"), .description = UNDL("The example of a bubble sorting algorithm;")};
 
     system("clear");
     cout << FBLU("\n\t\tWelcome to OrtOS manager") << FGRN(" ["<< version << "] ") << endl;
