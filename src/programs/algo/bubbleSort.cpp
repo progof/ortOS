@@ -34,6 +34,8 @@ void printArray(int array[], int size)
 
 void displayBubbleSort()
 {
+    auto timeStart = chrono::steady_clock::now();
+
     cout << "\n\tThe name of the program => [Algo: Bubble Sort]\n" << endl;
     int data[] = {-2, 45, 0, 11, -9};
 
@@ -44,4 +46,9 @@ void displayBubbleSort()
   
     cout << "Sorted Array in Ascending Order:\n";  
     printArray(data, size);
+
+    auto timeEnd = chrono::steady_clock::now();
+    auto workTime = chrono::duration_cast<chrono::milliseconds>(timeStart-timeEnd);
+    //chrono::duration<float> workTime = timeStart - timeEnd;
+    cout << "Algo running time: " << workTime.count() << " s" << endl;
 }
