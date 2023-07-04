@@ -2,8 +2,8 @@
 #include <vector>
 #include <string>
 
-//#include <../programs/MiniProgramController.cpp>
-#include <core/core.cpp>
+#include <../programs/MiniProgramController.cpp>
+#include <../core/core.cpp>
 
 void ui()
 {
