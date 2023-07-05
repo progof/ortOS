@@ -25,7 +25,7 @@ HelloWorldProgram.o: ./src/programs/HelloWorldProgram.cpp ./src/core/core.hpp bu
 #	$(CXX) -c ./src/programs/IProgramController.cpp -o ./$(BUILD_DIR)/IProgramController.o
 
 run: BigNumberProgram.o HelloWorldProgram.o ./src/main.cpp build_dir
-	g++ $(CXXFLAGS) ./src/main.cpp $(BUILD_APP) $(CXXFLAGS) -o ./$(BUILD_DIR)/$(TARGET) && ./$(BUILD_DIR)/$(TARGET)
+	g++ $(CXXFLAGS) ./src/main.cpp $(BUILD_APP) -o ./$(BUILD_DIR)/$(TARGET) && ./$(BUILD_DIR)/$(TARGET)
 
 clean:
 	rm -r ./$(BUILD_DIR)/*

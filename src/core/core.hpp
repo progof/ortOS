@@ -26,9 +26,9 @@ public:
     }
 
     void displayPrograms() {
-        int index = 0;
+        int index = 1;
         for (const auto& program : programs) {
-            std::cout << index << ". " << program->name << std::endl;
+            std::cout << index << ". " << program->name << " - " << program->description << std::endl;
             index++;
         }
     }

@@ -1,9 +1,7 @@
 // BigNumberProgram.cpp
 
-#include <iostream>
 #include <cstring>
-//#include "IProgramController.hpp"
-#include "../core/core.hpp"  // Добавлено для полного определения класса MiniProgram
+#include "../core/core.hpp"  
 
 
 class BigNumberProgram : public IProgram {
