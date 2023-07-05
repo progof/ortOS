@@ -16,7 +16,7 @@ public:
     virtual void run() = 0;
 };
 
-class IProgramController: public IProgram {
+class IProgramController {
 private:
     std::vector<IProgram*> programs;
 

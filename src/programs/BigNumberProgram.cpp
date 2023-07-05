@@ -2,7 +2,7 @@
 
 #include <iostream>
 #include <cstring>
-#include "IProgramController.hpp"
+//#include "IProgramController.hpp"
 #include "../core/core.hpp"  // Добавлено для полного определения класса MiniProgram
 
 

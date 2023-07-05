@@ -1,7 +1,7 @@
 // MiniProgramController.cpp
 
 #include <iostream>
-#include "IProgramController.hpp"
+//#include "IProgramController.hpp"
 #include "core/core.hpp"
 
 void IProgramController::registerProgram(IProgram* program) {
