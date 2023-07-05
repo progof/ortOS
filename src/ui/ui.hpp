@@ -1,9 +1,12 @@
+#ifndef CORE_H
+#define CORE_H
+
 #include <iostream>
 #include <vector>
 #include <string>
 
-#include <../programs/MiniProgramController.cpp>
-#include <../core/core.cpp>
+#include "programs/IProgramController.hpp"
+#include "core/core.hpp"
 
 void ui()
 {
@@ -20,4 +23,6 @@ void ui()
             std::cout << std::endl;
         }
     }
-}    
+} 
+
+#endif

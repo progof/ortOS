@@ -2,13 +2,13 @@
 
 #include <iostream>
 #include <cstring>
-#include "MiniProgramController.hpp"
-#include "MiniProgram.hpp" // Добавлено для полного определения класса MiniProgram
+#include "IProgramController.hpp"
+#include "../core/core.hpp"  // Добавлено для полного определения класса MiniProgram
 
 
-class BigNumberProgram : public MiniProgram {
+class BigNumberProgram : public IProgram {
 public:
-    BigNumberProgram() : MiniProgram("Big Number", "Программа, которая выводит на экран приветствие.") {}
+    BigNumberProgram() : IProgram("Big Number", "Программа, которая выводит на экран приветствие.") {}
 
 
        void run() override {
@@ -55,7 +55,7 @@ public:
     }
 };
 
-void registerBigNumberProgram(MiniProgramController& controller) {
+void registerBigNumberProgram(IProgramController& controller) {
     BigNumberProgram* program = new BigNumberProgram();
     controller.registerProgram(program);
 }

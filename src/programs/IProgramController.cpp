@@ -1,14 +1,14 @@
 // MiniProgramController.cpp
 
 #include <iostream>
-#include "MiniProgramController.hpp"
-#include "MiniProgram.hpp"
+#include "IProgramController.hpp"
+#include "core/core.hpp"
 
-void MiniProgramController::registerProgram(MiniProgram* program) {
+void IProgramController::registerProgram(IProgram* program) {
     programs.push_back(program);
 }
 
-void MiniProgramController::displayPrograms() {
+void IProgramController::displayPrograms() {
     int index = 0;
     for (const auto& program : programs) {
         std::cout << index << ". " << program->name << std::endl;
@@ -16,7 +16,7 @@ void MiniProgramController::displayPrograms() {
     }
 }
 
-void MiniProgramController::runProgram(int index) {
+void IController::runProgram(int index) {
     if (index >= 0 && index < programs.size()) {
         programs[index]->run();
     } else {

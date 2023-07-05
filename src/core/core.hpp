@@ -1,26 +1,27 @@
 // OrtOS 2.0 04.07.2023
+#ifndef CORE_H
+#define CORE_H
 
-// main.cpp
 #include <iostream>
 #include <vector>
 #include <string>
 
-class MiniProgram {
+class IProgram {
 public:
     std::string name;
     std::string description;
 
-    MiniProgram(const std::string& name, const std::string& description) : name(name), description(description) {}
+    IProgram(const std::string& name, const std::string& description) : name(name), description(description) {}
 
     virtual void run() = 0;
 };
 
-class MiniProgramController {
+class IProgramController: public IProgram {
 private:
-    std::vector<MiniProgram*> programs;
+    std::vector<IProgram*> programs;
 
 public:
-    void registerProgram(MiniProgram* program) {
+    void registerProgram(IProgram* program) {
         programs.push_back(program);
     }
 
@@ -41,3 +42,4 @@ public:
     }
 };
 
+#endif
