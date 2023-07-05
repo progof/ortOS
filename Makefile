@@ -1,6 +1,6 @@
 TARGET = ortOS
 BUILD_DIR = build
-BUILD_APP = ./$(BUILD_DIR)/BigNumberProgram.o ./$(BUILD_DIR)/HelloWorldProgram.o 
+BUILD_APP = ./$(BUILD_DIR)/BigNumberProgram.o ./$(BUILD_DIR)/HelloWorldProgram.o ./$(BUILD_DIR)/BubbleSortAlgo.o 
 #BUILD_CORE = ./$(BUILD_DIR)/core.o 
 #BUILD_UI = ./$(BUILD_DIR)/ui.o 
 CXXFLAGS = -std=c++17
@@ -21,10 +21,13 @@ BigNumberProgram.o: ./src/programs/BigNumberProgram.cpp ./src/core/core.hpp buil
 HelloWorldProgram.o: ./src/programs/HelloWorldProgram.cpp ./src/core/core.hpp build_dir
 	$(CXX) -c ./src/programs/HelloWorldProgram.cpp -o ./$(BUILD_DIR)/HelloWorldProgram.o
 
+BubbleSortAlgo.o: ./src/programs/BubbleSortAlgo.cpp ./src/core/core.hpp build_dir
+	$(CXX) -c ./src/programs/BubbleSortAlgo.cpp -o ./$(BUILD_DIR)/BubbleSortAlgo.o	
+
 #IProgramController.o: ./src/programs/IProgramController.cpp ./src/programs/IProgramController.hpp  ./src/core/core.hpp build_dir
 #	$(CXX) -c ./src/programs/IProgramController.cpp -o ./$(BUILD_DIR)/IProgramController.o
 
-run: BigNumberProgram.o HelloWorldProgram.o ./src/main.cpp build_dir
+run: BigNumberProgram.o HelloWorldProgram.o BubbleSortAlgo.o ./src/main.cpp build_dir
 	g++ $(CXXFLAGS) ./src/main.cpp $(BUILD_APP) -o ./$(BUILD_DIR)/$(TARGET) && ./$(BUILD_DIR)/$(TARGET)
 
 clean:

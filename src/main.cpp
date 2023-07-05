@@ -14,6 +14,9 @@ int main() {
 
     extern void registerBigNumberProgram(IProgramController&);
     registerBigNumberProgram(controller);
+    
+    extern void registerBubbleSortAlgo(IProgramController&);
+    registerBubbleSortAlgo(controller);
 
     ui();
 
