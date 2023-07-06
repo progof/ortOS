@@ -4,7 +4,7 @@
 
 class BubbleSortAlgo : public IProgram {
 public:
-    BubbleSortAlgo() : IProgram("BubbleSortAlgo", "Программа, которая выводит на экран приветствие.") {}
+    BubbleSortAlgo() : IProgram("BubbleSortAlgo", "Sort Algo", "Программа, которая выводит на экран приветствие.") {}
 
 void bubbleSort(int array[], int size)
 { 

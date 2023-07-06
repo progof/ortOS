@@ -6,7 +6,7 @@
 
 class BigNumberProgram : public IProgram {
 public:
-    BigNumberProgram() : IProgram("Big Number", "Программа, которая выводит на экран приветствие.") {}
+    BigNumberProgram() : IProgram("Big Number", "Algo", "Программа, которая выводит на экран приветствие.") {}
 
 
        void run() override {

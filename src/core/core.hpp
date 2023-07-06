@@ -6,12 +6,38 @@
 #include <vector>
 #include <string>
 
+/* Config */
+
+// Colors 
+#define RST  "\x1B[0m"
+#define KRED  "\x1B[31m"
+#define KGRN  "\x1B[32m"
+#define KYEL  "\x1B[33m"
+#define KBLU  "\x1B[34m"
+#define KMAG  "\x1B[35m"
+#define KCYN  "\x1B[36m"
+#define KWHT  "\x1B[37m"
+
+#define FRED(x) KRED x RST
+#define FGRN(x) KGRN x RST
+#define FYEL(x) KYEL x RST
+#define FBLU(x) KBLU x RST
+#define FMAG(x) KMAG x RST
+#define FCYN(x) KCYN x RST
+#define FWHT(x) KWHT x RST
+
+#define BOLD(x) "\x1B[1m" x RST
+#define UNDL(x) "\x1B[4m" x RST
+
+extern std::string version;
+
 class IProgram {
 public:
+    std::string category;
     std::string name;
     std::string description;
 
-    IProgram(const std::string& name, const std::string& description) : name(name), description(description) {}
+    IProgram(const std::string& category, const std::string& name, const std::string& description) : category(category), name(name), description(description) {}
 
     virtual void run() = 0;
 };
@@ -28,7 +54,7 @@ public:
     void displayPrograms() {
         int index = 1;
         for (const auto& program : programs) {
-            std::cout << index << ". " << program->name << " - " << program->description << std::endl;
+            std::cout << index << ". " << program->name << " | " << program->category << " |" << " - " << program->description << std::endl;
             index++;
         }
     }
@@ -37,7 +63,7 @@ public:
         if (index >= 0 && index < programs.size()) {
             programs[index]->run();
         } else {
-            std::cout << "Некорректный индекс программы." << std::endl;
+            std::cout << FRED("\n\nError: Incorrect program index.") << std::endl;
         }
     }
 };
