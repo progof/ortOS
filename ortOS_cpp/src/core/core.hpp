@@ -33,11 +33,11 @@ extern std::string version;
 
 class IProgram {
 public:
-    std::string category;
     std::string name;
+    std::string category;
     std::string description;
 
-    IProgram(const std::string& category, const std::string& name, const std::string& description) : category(category), name(name), description(description) {}
+    IProgram(const std::string& name, const std::string& category, const std::string& description) : name(name), category(category), description(description) {}
 
     virtual void run() = 0;
 };
@@ -53,6 +53,7 @@ public:
 
     void displayPrograms() {
         int index = 1;
+        std::cout << FYEL("0. Exit") << std::endl;
         for (const auto& program : programs) {
             std::cout << index << ". " << program->name << " | " << program->category << " |" << " - " << program->description << std::endl;
             index++;
