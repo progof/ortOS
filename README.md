@@ -1,16 +1,4 @@
-# ortOS
-***Personal manager for working with simple programs***
+# ortOS 2.0
 
-List of programs available in the manager:
+This is a program and algorithm manager implemented in OOP and MVC architecture. The manager will be rewritten in other programming languages taking into account the author's experience and developments.
 
-1. Game: Guess X
-2. Game: HungryDog
-3. Finance: Compound Interest
-4. Education: Compress
-5. Education: MultBigNum
-6. Education: Animal
-
-```bash
-git clone https://github.com/progof/ortOS.git cd && ortOS
-make run
-```
