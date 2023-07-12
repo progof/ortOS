@@ -1,4 +1,4 @@
-# ortOS 2.0
+# ortOS 2.0 Cpp
 ***Personal manager for working with simple programs and algorithms written with OOP approach and MVС architecture***
 
 List of programs available in the manager:
@@ -9,6 +9,6 @@ List of programs available in the manager:
 4. Compound interest
 
 ```bash
-git clone https://github.com/progof/ortOS.git cd && ortOS
+git clone https://github.com/progof/ortOS.git cd && ortOS/ortOS_cpp
 make run
 ```
