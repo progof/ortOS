@@ -3,7 +3,10 @@
 
 List of programs available in the manager:
 
-Soon...
+1. Multiplication of large numbers
+2. BubbleSort
+3. Character compression
+4. Compound interest
 
 ```bash
 git clone https://github.com/progof/ortOS.git cd && ortOS

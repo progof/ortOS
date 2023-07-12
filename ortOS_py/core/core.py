@@ -7,7 +7,7 @@ class IProgram:
     def run(self):
         pass
 
-class IProgramController:
+class IProgramController(IProgram):
     def __init__(self):
         self.programs = []
 
@@ -15,8 +15,9 @@ class IProgramController:
         self.programs.append(program)
 
     def display_programs(self):
+        print("0. Exit")
         for index, program in enumerate(self.programs):
-            print(f"{index}. {program.name}")
+            print(f"{index}. {program.name}. {program.category}. {program.description}")  
 
     def run_program(self, index):
         if 0 <= index < len(self.programs):

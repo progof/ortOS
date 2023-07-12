@@ -8,9 +8,6 @@
 
 int main() {
    // IProgramController controller;
-   
-    extern void registerHelloWorldProgram(IProgramController&);
-    registerHelloWorldProgram(controller);
 
     extern void registerBigNumberProgram(IProgramController&);
     registerBigNumberProgram(controller);
@@ -18,6 +15,12 @@ int main() {
     extern void registerBubbleSortAlgo(IProgramController&);
     registerBubbleSortAlgo(controller);
 
+    extern void registerCharCompress(IProgramController&);
+    registerCharCompress(controller);
+
+    extern void registerCompoundInterest(IProgramController&);
+    registerCompoundInterest(controller);
+    
     ui();
 
     return 0;

@@ -1,18 +1,18 @@
 # main.py
 
 from core.core import IProgramController
+from ui.ui2 import ui2
 from programs.hello import HelloWorldProgram
-from ui.ui import UI
 
-# Создаем экземпляр контроллера программ
+# Create an instance of the program controller
 controller = IProgramController()
 
-# Регистрируем программы в контроллере
-controller.register_program(HelloWorldProgram("Приветствие", "Test", "Программа выводит приветствие"))
+# Create an instance of the user interface
+#ui = UI(controller)
 
-# Создаем экземпляр пользовательского интерфейса
-ui = UI(controller)
+# Launch the user interface
+#ui.run()
 
-# Запускаем пользовательский интерфейс
-ui.run()
-
+#controller.display_programs()
+#program_index = int(input("Выберите программу по индексу: "))
+#controller.run_program(program_index)

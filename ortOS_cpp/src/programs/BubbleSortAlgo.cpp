@@ -4,7 +4,7 @@
 
 class BubbleSortAlgo : public IProgram {
 public:
-    BubbleSortAlgo() : IProgram("BubbleSortAlgo", "Sort Algo", "Программа, которая выводит на экран приветствие.") {}
+    BubbleSortAlgo() : IProgram("BubbleSort", "Algo", "Bubble sort algorithm;") {}
 
 void bubbleSort(int array[], int size)
 { 
@@ -39,7 +39,7 @@ void printArray(int array[], int size)
 }
 
     void run() override {
-        std::cout << "\n\tThe name of the program => [Algo: Bubble Sort]\n" << std::endl;
+        std::cout << "\n\tThe name of the program => [Bubble Sort]\n" << std::endl;
         int data[] = {-2, 45, 0, 11, -9};
 
          // find array's length
