@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    font-family: 'Libre Baskerville', sans-serif;
+    font-size: 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background: #ffffff;
+    padding-bottom: 75px;
+    padding-top: 48px;
+
+}
+
+.container {
+    margin-left: 92px;
+    margin-right: 92px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.logo-text {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 60px;
+}
+
+.slogan {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.version {
+    font-size: 15px;
+    margin-left: 338px;
+}
+
+.version-text {
+    color: #838282;
+}
+
+.version-number {
+    margin-left: 5px;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    width: 34px;
+    flex-wrap: wrap;
+    margin-left: auto;
+}
+
+.menu span {
+    background: #000000;
+    display: block;
+    width: 34px;
+    height: 2px;
+    margin-bottom: 5px;
+}
+
+.menu span:nth-child(2) {
+    width: 29px;
+}
+
+.menu span:nth-child(3)  {
+    width: 21px;
+}
+
+.header-content {
+    margin-top: 83px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about {
+    margin-top: 20px;
+}
+
+.merits {
+    font-style: italic;
+}
+
+.merits span {
+    margin-right: 24px;
+}
+
+.header-block {
+
+}
+
+.help-text {
+    font-size: 20px;
+    font-family: 'Libre Baskerville', sans-serif;
+    margin-top: 30px;
+}
+
+.h1 {
+    font-style: italic;
+    font-size: 50px;
+    margin-bottom: 16px;
+}
+
+.intro-text {
+    width: 379px;
+    margin-bottom: 43px;
+    margin-top: 43px;
+}
+
+.download {
+    color:#000000;
+    border: 1px solid #000000;
+    border-radius: 70px;
+    padding: 14px 44px;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.download:hover {
+    background:#ccabe0;
+    border: 1px solid #ccabe0;
+    color:#000000;
+}
+
+.sreenshot {
+
+}
+
+.ortos-img {
+    display: block;
+    margin-top: 10px;
+    height: 456px;
+    width: 612px;
+
+}
